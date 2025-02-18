@@ -15,29 +15,33 @@ This report focuses on analyzing airline passenger satisfaction using data minin
 
 The dataset consists of two files: `train.csv` and `test.csv`, which contain demographic and satisfaction-related information from 129,880 airline passengers. Key features include:
 
-- **Gender**: The gender of the passengers (Female, Male)
-- **Customer Type**: The type of customer (Loyal Customer, Disloyal Customer)
-- **Age**: The actual age of the passengers
-- **Type of Travel**: The purpose of the flight (Personal Travel, Business Travel)
-- **Class**: The class of travel on the airplane (Business, Economy, Economy Plus)
-- **Flight Distance**: The distance of the flight
-- **Inflight Wifi Service**: Satisfaction level with the inflight wifi service (0: Not applicable; 1-5)
-- **Departure/Arrival Time Convenient**: Satisfaction level with the convenience of departure/arrival time
-- **Ease of Online Booking**: Satisfaction level with the ease of online booking
-- **Gate Location**: Satisfaction level with the gate location
-- **Food and Drink**: Satisfaction level with food and drink
-- **Online Boarding**: Satisfaction level with online boarding
-- **Seat Comfort**: Satisfaction level with seat comfort
-- **Inflight Entertainment**: Satisfaction level with inflight entertainment
-- **On-board Service**: Satisfaction level with onboard service
-- **Leg Room Service**: Satisfaction level with legroom service
-- **Baggage Handling**: Satisfaction level with baggage handling
-- **Check-in Service**: Satisfaction level with check-in service
-- **Inflight Service**: Satisfaction level with inflight service
-- **Cleanliness**: Satisfaction level with cleanliness
-- **Departure Delay in Minutes**: Departure delay in minutes
-- **Arrival Delay in Minutes**: Arrival delay in minutes
-- **Satisfaction**: Airline satisfaction level (Satisfied, Neutral, or Dissatisfied)
+```markdown
+| Feature                             | Description                                                                 |
+|-------------------------------------|-----------------------------------------------------------------------------|
+| Gender                              | The gender of the passengers (Female, Male)                                 |
+| Customer Type                       | The type of customer (Loyal Customer, Disloyal Customer)                    |
+| Age                                 | The actual age of the passengers                                            |
+| Type of Travel                      | The purpose of the flight (Personal Travel, Business Travel)                |
+| Class                               | The class of travel on the airplane (Business, Economy, Economy Plus)       |
+| Flight Distance                     | The distance of the flight                                                  |
+| Inflight Wifi Service               | Satisfaction level with the inflight wifi service (0: Not applicable; 1-5)  |
+| Departure/Arrival Time Convenient   | Satisfaction level with the convenience of departure/arrival time           |
+| Ease of Online Booking              | Satisfaction level with the ease of online booking                          |
+| Gate Location                       | Satisfaction level with the gate location                                   |
+| Food and Drink                      | Satisfaction level with food and drink                                      |
+| Online Boarding                     | Satisfaction level with online boarding                                     |
+| Seat Comfort                        | Satisfaction level with seat comfort                                        |
+| Inflight Entertainment              | Satisfaction level with inflight entertainment                              |
+| On-board Service                    | Satisfaction level with onboard service                                     |
+| Leg Room Service                    | Satisfaction level with legroom service                                     |
+| Baggage Handling                    | Satisfaction level with baggage handling                                    |
+| Check-in Service                    | Satisfaction level with check-in service                                    |
+| Inflight Service                    | Satisfaction level with inflight service                                    |
+| Cleanliness                         | Satisfaction level with cleanliness                                         |
+| Departure Delay in Minutes          | Departure delay in minutes                                                  |
+| Arrival Delay in Minutes            | Arrival delay in minutes                                                    |
+| Satisfaction                        | Airline satisfaction level (Satisfied, Neutral, or Dissatisfied)            |
+```
 
 ## Data Understanding
 The data is processed using Python libraries such as Pandas and NumPy. Initial steps include:
